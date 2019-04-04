@@ -1,0 +1,27 @@
+<form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+  <div
+    class="primary-bg container"
+    fxLayout="column"
+    fxLayoutAlign="center center"
+  >
+    <h1>Optimize your URL, using a great shortener system!</h1>
+    <div style="height: 25px"></div>
+    <mat-card
+      class="big-input mat-elevation-z8-error"
+      [ngClass]="
+        submitted && !formGroup.valid
+          ? 'error mat-elevation-z8-error'
+          : 'mat-elevation-z8'
+      "
+    >
+      <input
+        type="text"
+        placeholder="Enter your URL here"
+        formControlName="url"
+      />
+      <button class="primary-color" mat-icon-button aria-label="Submit url!">
+        <mat-icon>send</mat-icon>
+      </button>
+    </mat-card>
+  </div>
+</form>
