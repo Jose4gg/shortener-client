@@ -1,3 +1,5 @@
+import { isDevMode } from "@angular/core";
+
 const environments = {
   development: {
     baseUrl: "http://localhost:3000"
@@ -7,4 +9,5 @@ const environments = {
   }
 };
 
-export const BASE_URL = environments.development.baseUrl;
+export const BASE_URL =
+  environments[isDevMode() ? "development" : "production"].baseUrl;
