@@ -9,5 +9,4 @@ const environments = {
   }
 };
 
-export const BASE_URL =
-  environments[isDevMode() ? "development" : "production"].baseUrl;
+export const BASE_URL = environments["production"].baseUrl;
