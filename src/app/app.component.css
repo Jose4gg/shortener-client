@@ -4,3 +4,9 @@ body {
   margin: 0px;
   padding: 0px;
 }
+
+.content {
+  flex: 1 0 auto;
+  margin-top: 64px;
+  overflow: hidden;
+}

@@ -1,0 +1,23 @@
+.big-input {
+  width: 60%;
+  transition: all 0.5s;
+  display: flex;
+}
+
+.paddings {
+  padding: 20px 10px 20px 20px;
+}
+
+.over-top {
+  width: 60%;
+  margin-bottom: 20px;
+  /* height: 50px; */
+  transition: all 0.5s ease-in;
+}
+
+h4,
+h5,
+h3 {
+  margin-block-start: 0.2em;
+  margin-block-end: 0.2em;
+}

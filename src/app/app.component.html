@@ -1,7 +1,24 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
     <span>URL Shortener</span>
+    <span style="flex: 1 1 auto;"></span>
+    <!-- <span>URL Shortener</span> -->
+    <a mat-button routerLink=".">Home</a>
+    <a mat-button routerLink="top">Top 100 URLs</a>
   </mat-toolbar-row>
 </mat-toolbar>
 
+<!-- <div class="content"> -->
 <router-outlet></router-outlet>
+<!-- </div> -->
+<!-- 
+<div class="footer">
+  <div
+    fxLayout="column"
+    fxFlexFill
+    fxLayoutAlign="center center"
+    style="height: 200px; bottom: 0;"
+  >
+    2019 - Jose Gomez
+  </div>
+</div> -->

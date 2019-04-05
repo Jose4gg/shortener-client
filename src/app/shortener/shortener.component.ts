@@ -20,7 +20,6 @@ export class ShortenerComponent implements OnInit {
   website: Website = null;
 
   constructor(
-    private formBuilder: FormBuilder,
     private shortenerService: ShortenerService,
     private snackBar: MatSnackBar
   ) {}

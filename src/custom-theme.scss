@@ -32,6 +32,21 @@ $client-theme: mat-light-theme($client-primary, $client-accent, $client-warn);
   @include mat-elevation(8, #e91e2c, 1);
 }
 
+.footer {
+  color: mat-color($client-primary, lighter);
+  background-color: mat-color($client-primary, darker);
+
+  .links,
+  .signature {
+    a {
+      color: mat-color($client-primary, lighter);
+      &:hover {
+        color: mat-color($client-accent);
+      }
+    }
+  }
+}
+
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
