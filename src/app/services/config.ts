@@ -3,7 +3,7 @@ const environments = {
     baseUrl: "http://localhost:3000"
   },
   production: {
-    baseUrl: "http://localhost:3000"
+    baseUrl: "https://guarded-badlands-25914.herokuapp.com"
   }
 };
 
