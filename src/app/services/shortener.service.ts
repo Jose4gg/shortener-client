@@ -1,12 +1,13 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { Website } from "../models/website";
+import { BASE_URL } from "./config";
 
 @Injectable({
   providedIn: "root"
 })
 export class ShortenerService {
-  apiURL: string = "http://localhost:3000/shortener";
+  apiURL: string = `${BASE_URL}/shortener`;
 
   constructor(private httpClient: HttpClient) {}
 
