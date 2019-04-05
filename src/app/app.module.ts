@@ -4,6 +4,7 @@ import {
   MatToolbarModule,
   MatIconModule,
   MatCardModule,
+  MatSnackBarModule,
   MatButtonModule
 } from "@angular/material";
 import { AppRoutingModule } from "./app-routing.module";
@@ -13,6 +14,7 @@ import { NoopAnimationsModule } from "@angular/platform-browser/animations";
 import { ShortenerComponent } from "./shortener/shortener.component";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { ReactiveFormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [AppComponent, HeroesComponent, ShortenerComponent],
@@ -20,7 +22,9 @@ import { ReactiveFormsModule } from "@angular/forms";
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
+    HttpClientModule,
     MatToolbarModule,
+    MatSnackBarModule,
     MatIconModule,
     FlexLayoutModule,
     MatCardModule,

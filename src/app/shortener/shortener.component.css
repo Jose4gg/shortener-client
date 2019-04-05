@@ -1,5 +1,5 @@
 .container {
-  min-height: 450px;
+  min-height: 370px;
   color: white;
 }
 
@@ -9,14 +9,27 @@ h1 {
 }
 
 .big-input {
-  width: 50%;
+  width: 60%;
   transition: all 0.5s;
   display: flex;
+}
+
+.paddings {
   padding: 20px 10px 20px 20px;
 }
 
 .error {
   border: 1.3px solid #e91e2c;
+}
+
+.error-text {
+  color: white;
+}
+
+.over-top {
+  width: 60%;
+  transition: all 0.5s ease-in;
+  margin-top: -40px;
 }
 
 input {
@@ -31,4 +44,15 @@ button {
   padding: 0;
   min-width: 36px;
   margin-left: 10px;
+}
+
+h4 {
+  margin-block-start: 0px;
+  margin-block-end: 1em;
+}
+
+h5 {
+  font-weight: 400;
+  padding: 0px;
+  margin: 0px;
 }

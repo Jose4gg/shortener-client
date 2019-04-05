@@ -7,7 +7,7 @@
     <h1>Optimize your URL, using a great shortener system!</h1>
     <div style="height: 25px"></div>
     <mat-card
-      class="big-input mat-elevation-z8-error"
+      class="big-input paddings"
       [ngClass]="
         submitted && !formGroup.valid
           ? 'error mat-elevation-z8-error'
@@ -23,5 +23,24 @@
         <mat-icon>send</mat-icon>
       </button>
     </mat-card>
+    <div style="height: 10px"></div>
+    <div fxLayout="row" *ngIf="submitted && !formGroup.valid">
+      <span>
+        * Invalid URL
+      </span>
+    </div>
   </div>
 </form>
+<div fxLayout="column" fxLayoutAlign="center center" *ngIf="!!website">
+  <mat-card class="over-top">
+    <div fxLayout="row" fxLayoutAlign="space-between center">
+      <div fxLayout="column">
+        <h4 class="primary-color">{{ website.url }}</h4>
+        <h5 *ngIf="!!website.title">{{ website.title }}</h5>
+      </div>
+      <button class="primary-color" mat-icon-button (click)="onWebsiteClick()">
+        <mat-icon>library_books</mat-icon>
+      </button>
+    </div>
+  </mat-card>
+</div>
